@@ -16,7 +16,7 @@ except ImportError:
 warnings.filterwarnings('ignore')
 
 # 加载数据
-train_file_path = r'D:\wordjihe\zuixindeshujuxlsx.xlsx'
+train_file_path = 'zuixindeshujuxlsx.xlsx'
 df_train = pd.read_excel(train_file_path, na_values=['NA', 'na', 'N/A', 'n/a', ''])
 
 X_train_origin = df_train.iloc[:, 0:12].copy()
